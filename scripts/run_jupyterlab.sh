@@ -49,5 +49,5 @@ for i in $(seq $port 8950); do
     fi
 done
 
-jupyter lab --ip=0.0.0.0 --NotebookApp.port=$port --NotebookApp.custom_display_url=http://$HOST:$port
+jupyter lab --ip=0.0.0.0 --no-browser --NotebookApp.port=$port --NotebookApp.custom_display_url=http://$HOST:$port
 
