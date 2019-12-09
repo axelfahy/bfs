@@ -5,7 +5,10 @@ This repository contains some useful scripts:
 
 * `run_jupyterlab.sh`: script to start [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) on a server. The script will automatically find an available port and display the correct url to access the notebook.
 
+* `start.py`: startup script for [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) to load some imports and activate the autoreload.
+
 * `sync_owncloud.sh`: script to sync an [Owncloud](https://owncloud.org/) folder. It can be used in cron, to sync folders between servers.
+
 
 ## Meta
 
