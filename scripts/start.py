@@ -33,7 +33,4 @@ if "ipython" in globals():
     ipython.magic("load_ext autoreload")
     ipython.magic("autoreload 2")
 
-    # Load functions from notebook
-    from ipynb.fs.full._functions import *
-
 print("All packages have been loaded.")
