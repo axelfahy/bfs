@@ -16,7 +16,7 @@
 #                Warning: the password is stored in clear in the file...
 #
 #       OPTIONS: ---
-#  REQUIREMENTS: owncloudcmd
+#  REQUIREMENTS: owncloudcmd-client>=2.4.1
 #          BUGS: ---
 #         NOTES: ---
 #        AUTHOR: Axel Fahy (axel@fahy.net),
