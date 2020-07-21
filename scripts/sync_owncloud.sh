@@ -14,6 +14,16 @@
 #                0 * * * * /bin/bash /path/to/sync_owncloud.sh
 #
 #                Warning: the password is stored in clear in the file...
+#                Partial solution: encrypt the password inside a file,
+#                then read and decrypt the file when needed.
+#
+#                Example:
+#                echo 'mysecretpassword' | openssl enc -base64 -e -aes-256-cbc -nosalt
+#                                          --pbkdf2 -pass pass:garbageKey  > .secret.lck
+#
+#                And set `PASSWORD` to:
+#                `cat .secret.lck | openssl enc -base64 -d -aes-256-cbc -nosalt
+#                --pbkdf2 -pass pass:garbageKey`
 #
 #       OPTIONS: ---
 #  REQUIREMENTS: owncloudcmd-client>=2.4.1
